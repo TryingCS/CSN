@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/hardware-basics/","created":"2026-09-30T12:15:52.260+01:00","updated":"2026-10-11T20:42:29.439+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/hardware-basics/","created":"2026-09-30T12:15:52.260+01:00","updated":"2026-10-12T11:05:27.768+01:00","dg-note-properties":{}}
 ---
 
 #hpc 
-### 💾 Hardware Basics: Strict Summary
 
-**Transistors & Logic** 💡
+
+### **Transistors & Logic** 💡
 *   **Transistor:** A microscopic electrically controlled switch. Has two states: On (1) or Off (0).
 *   **Logic Gates:** Transistors wired together to perform basic boolean logic (AND, OR, NOT).
 *   **CPU:** Billions of logic gates organized into:
@@ -30,7 +30,7 @@
     *   *Misprediction:* The pipeline is flushed. All speculative work is thrown away, wasting clock cycles.
 *   **Cache (L1, L2, L3):** Small, very fast memory located close to the CPU to avoid the massive latency of going to RAM.
 
-**Hardware Reality & Limits**
+### **Hardware Reality & Limits**
 *   **Dennard Scaling (Ended mid-2000s):** Shrinking transistors no longer kept power density constant. Increasing clock speed caused exponential heat and power consumption.
 *   **The Wall:** Engineers could not crank clock speed higher without melting chips.
 *   **The Solution:** Stop increasing single-core clock speed. Instead, add multiple processing units (Cores) to the same chip -> **Parallel Computing**.
@@ -69,3 +69,44 @@ A CPU and a GPU are both processors made of transistors, but they are designed w
 You don't choose one or the other. You use both. The CPU acts as the "manager" (handling logic, I/O, and sequential tasks) and offloads the heavy, repetitive math to the GPU. This is exactly what happens when you train a neural network in PyTorch—the CPU handles the Python script and data loading, while the GPU does the matrix multiplications.
 
 _(This directly answers your Tutorial Sheet Exercise 1.1, Question 4. If you are doing ML/DL, you prioritize a powerful GPU with a decent CPU, because the GPU does the heavy lifting)._
+***
+### Nvidia 💰️
+
+ SIMD is inflexible and terrible at branching (the `if` problem). Yet, GPUs (which are massive SIMD machines) are the undisputed kings of AI right now. How does that make sense?
+
+The answer: **AI workloads are the absolute perfect match for SIMD, despite its inflexibility.**
+
+Here is why:
+
+ 🧠 1. AI is Just Massive Matrix Multiplication
+When you train a neural network, what is actually happening under the hood? It's not a bunch of complex `if/else` logic. It's essentially this: 
+*   Take a giant grid of numbers (weights).
+*   Take another giant grid of numbers (inputs).
+*   Multiply and add them together.
+*   Repeat a billion times.
+
+There are **almost no branches** in the core math of a neural network. It's just endless, repetitive, identical math on massive arrays of data. This is SIMD's dream. SIMD is inflexible, but if your problem is uniformly "do this exact same math on 10 million numbers," inflexibility doesn't matter. It's pure speed.
+
+
+🛡️ 2. The "SIMT" Secret (NVIDIA's Trick)
+Technically, NVIDIA GPUs aren't pure SIMD. They use a concept called **SIMT (Single Instruction, Multiple Threads)**. 
+
+Here's the trick: When you write CUDA code (which you will do in Chapter 3), you write it like normal MIMD code. You write code for *one* thread, and you pretend that thread has its own independent data. 
+
+But under the hood, the GPU hardware groups threads into "warps" (usually 32 threads). If all 32 threads in a warp hit an `if` statement and take the same path, it's perfect SIMD. If they diverge (some take `if`, some take `else`), the hardware uses a mask, makes them execute both paths, and throws away the wrong answers. 
+
+The programmer gets the *ease* of MIMD programming, but the hardware gets the *efficiency* of SIMD.
+
+ 3. The Handicapped Soldier in AI
+Even though AI has very few branches, some do exist. The most common one is the **ReLU activation function** (`if x < 0, return 0, else return x`). 
+
+You might think this would cause the "handicapped soldier" problem. But it's actually a very cheap branch. The GPU can just use a simple mask: `x = max(0, x)`. It doesn't stall the pipeline. 
+
+### ⚔️ The Modern Reality (CPU + GPU)
+This is why modern AI systems use **both**:
+*   **The CPU 🧠 (MIMD):** Handles the complex logic, the `if` statements, the data loading, the operating system, and coordinating the whole training process. It's the general.
+*   **The GPU💪 (SIMT/SIMD):** Does the heavy lifting. It takes the massive, uniform matrix math and crunches it at lightning speed. It's the muscle. 
+
+So yes, GPUs are the hot thing for AI *because* AI is almost entirely SIMD-friendly math. If AI required lots of complex branching logic, GPUs would be terrible at it. 
+
+---
