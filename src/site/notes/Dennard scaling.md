@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/dennard-scaling/","created":"2026-10-01T15:20:01.952+01:00","updated":"2026-10-01T15:25:09.913+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/dennard-scaling/","created":"2026-10-01T15:20:01.952+01:00","updated":"2026-10-11T20:02:10.909+01:00","dg-note-properties":{}}
 ---
 
 #hpc  #misc 
@@ -35,5 +35,8 @@ This is the era you were asking about earlier, where clock speeds went from a fe
 The "scientific encouragement" you mentioned is exactly what happened. The industry was incentivized to shrink transistors because the rewards were enormous: you'd get a chip that was simultaneously faster, denser, and no hotter than the previous generation.
 
 The problem, as you already discovered, is that this couldn't last forever. By the mid-2000s, transistors became so small that they started leaking electricity (a phenomenon called quantum tunneling). Engineers could no longer scale the voltage down to keep power in check. As a result, the power density skyrocketed, and chips would melt if you tried to push the clock speed higher.
+***
 
-This is the **end of Dennard scaling** . It's the exact physics wall that forced the industry to stop making single cores faster and start making multiple cores—which is the entire foundation of parallel computing.
+
+
+
