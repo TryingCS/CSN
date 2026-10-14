@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/assets/list-of-all-tags/","created":"2026-09-18T08:23:26.786+01:00","updated":"2026-10-03T22:44:56.160+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/assets/list-of-all-tags/","created":"2026-09-18T08:23:26.786+01:00","updated":"2026-10-13T11:02:35.482+01:00","dg-note-properties":{}}
 ---
 
 #meta 
@@ -16,6 +16,7 @@
 #BI 
 #hpc 
 #technicalWritng 
+#krr 
 
 
 ***

@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/assets/subjects/technologies/some-resources/","created":"2026-09-18T08:23:23.286+01:00","updated":"2026-09-06T20:56:12.000+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/assets/subjects/technologies/some-resources/","created":"2026-09-18T08:23:23.286+01:00","updated":"2026-10-12T19:24:25.623+01:00","dg-note-properties":{}}
 ---
 
-#S7 
+#misc 
 ***
 
 [The Last Algorithms Course You'll Need \| Master.dev](https://master.dev/courses/algorithms/big-o-time-complexity/)
@@ -15,6 +15,4 @@
 ***
 [Krzysztof Kowalczyk – Programming Blog](https://blog.kowalczyk.info/)
 
-https://learn-docker-fork.vercel.app/  #docker
-w
-
+https://learn-docker-fork.vercel.app/  

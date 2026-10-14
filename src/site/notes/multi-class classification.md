@@ -1,11 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/multi-class-classification/","created":"2026-10-06T19:56:12.078+01:00","updated":"2026-10-06T19:58:25.425+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/multi-class-classification/","created":"2026-10-06T19:56:12.078+01:00","updated":"2026-10-12T19:27:42.345+01:00","dg-note-properties":{}}
 ---
 
 #ml 
 In ML, when we say **"multi-class classification,"** we specifically mean **more than two classes**. 
-
-Yes, linguistically it sounds weird because "multi" just means "many" (and 2 is many), but in ML jargon, it's a strict distinction:
 
 1. **Binary Classification:** Exactly **2** classes. 
    * *Examples:* Spam / Not Spam. Fraud / Not Fraud. Cat / Dog. 

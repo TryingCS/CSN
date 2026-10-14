@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/bayes-theorem/","created":"2026-10-08T19:21:06.293+01:00","updated":"2026-10-08T20:47:49.899+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/bayes-theorem/","created":"2026-10-08T19:21:06.293+01:00","updated":"2026-10-13T11:16:45.869+01:00","dg-note-properties":{}}
 ---
 
-#ml 
+#ml #krr 
 Bayes' theorem is the bridge that takes us from the easy thing to calculate P(B|A) to the useful thing we want to predict P(A|B) by combining the [[Conditional probability\|Conditional probability]] formula and the [[Law of Total Probability\|Law of Total Probability]].
 ![Pasted image ٢٠٢٦١٠٠٨١٩٣٤٢٤.png](/img/user/Pasted%20image%20%D9%A2%D9%A0%D9%A2%D9%A6%D9%A1%D9%A0%D9%A0%D9%A8%D9%A1%D9%A9%D9%A3%D9%A4%D9%A2%D9%A4.png)
 ### Step 1: Define th (The Symbols)
