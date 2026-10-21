@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/types-of-learning/","created":"2026-10-05T18:14:36.479+01:00","updated":"2026-10-05T19:53:41.105+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/types-of-learning/","created":"2026-10-05T18:14:36.479+01:00","updated":"2026-10-21T14:59:55.988+01:00","dg-note-properties":{}}
 ---
 
 #ml 
@@ -11,7 +11,7 @@ First, a tiny bit of shared vocabulary:
 - **Training** = the process of learning the model from data.
 - **Prediction/Inference** = using the model on new data.
 
-Now, the learning types differ mainly in **what kind of experience the algorithm gets** and **what it’s trying to achieve**.
+The learning types differ mainly in **what kind of experience the algorithm gets** and **what it’s trying to achieve**.
 
 ---
 
@@ -40,7 +40,7 @@ Learn a function that predicts the label from the features, and **generalises** 
 
 **Two main sub-types:**
 - **Regression:** predict a continuous number (e.g., price, temperature).
-- **Classification:** predict a category (e.g., spam/not spam, cat/dog , pizza 🍕 or not pizza💔).
+- **Classification:** predict a category (e.g., pizza 🍕 or not pizza💔).
 
 **Examples:**
 - Predicting apartment prices (regression).
@@ -96,7 +96,7 @@ Discover hidden structure in the data. Common goals:
 - t-SNE
 
 **Key point:**  
-There is no label to predict, so evaluation is harder. You often need domain knowledge to interpret the discovered structure.
+There is no label to predict, so evaluation is harder. You often need domain knowledge to interpret the discovered structure.☕️
 
 ---
 

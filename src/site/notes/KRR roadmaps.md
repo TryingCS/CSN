@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/krr-roadmaps/","created":"2026-10-13T11:01:01.279+01:00","updated":"2026-10-13T11:19:22.017+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/krr-roadmaps/","created":"2026-10-13T11:01:01.279+01:00","updated":"2026-10-14T18:03:32.581+01:00","dg-note-properties":{}}
 ---
 
-#krr
+#krr 
 
 
 **Course Title:** Knowledge Representation and Reasoning 
@@ -49,3 +49,45 @@ This is shaping up to be the **longest chapter in terms of files**. Just look at
 1.  **For Chapter 1 (Part B):** Don't memorize the symbols blindly. Focus on the *meaning* and *application*. For example, in Modal Logic, understand *why* we need to represent "belief" or "necessity." 
 2.  **For Chapter 2 (Uncertainty):** **Review your probability basics NOW.** Before the teacher uploads the file, make sure you know what [[Conditional probability\|Conditional probability]] `P(A|B)` is, and understand [[Bayes’ Theorem\|Bayes’ Theorem]]. If you are solid on the math, Chapter 2 becomes much easier.
 3.  **For Chapter 3 (Fuzzy):** it's highly practical and less abstract than the rest.
+***
+### ch1 
+
+
+
+
+If we look at your syllabus (Syllabus.pdf), Chapter 1 is titled **"Logiques non classiques"** (Non-Classical Logics). It is divided into two main sections:
+*   **A- Logique Classique** (Classical Logic) ← **YOU ARE HERE** (This is your "Part 1" PDF).
+*   **B- Logique Non classique** (Non-Classical Logic) ← Still to come.
+A:
+1.  Propositional Logic (Syntax, Semantics, Truth Tables)
+2.  Normal Forms (FNC, FND)
+3.  Predicate Logic (Quantifiers, Free/Bound variables, Prenex and Skolem Normal Forms).
+
+ The rest of the chapter (Part B) gets more philosophical and deals with how to model complex ideas like beliefs, exceptions, and structured knowledge.
+
+### 📂 Question 2: How many "parts" files should I expect?
+
+The teacher named this file "Part 1", which strongly implies there will be a "Part 2". However, based on the syllabus, **you should expect multiple parts for the rest of Chapter 1**, because Section B is massive. 
+
+Here is my prediction for how the teacher will upload the remaining files for Chapter 1 (Section B):
+*   **Part 2: Logique Modale** (Modal Logic). This will cover notions of "necessary" and "possible" truths, Kripke semantics (possible worlds), and how multi-agent systems communicate.
+*   **Part 3: La logique des défauts** (Default Logic). This covers "non-monotonic" reasoning—how to draw conclusions when you don't have all the information (e.g., "Birds normally fly, so if I see a bird, I assume it flies, unless I know it's a penguin").
+*   **Part 4: Logiques de description** (Description Logics). This is heavily used for building ontologies (structured knowledge bases) and the semantic web. 
+
+**What about the rest of the semester?**
+Looking at your syllabus, you have two more major chapters after Chapter 1:
+*   **Chapter 2 (Uncertainty):** Belief functions, Bayesian networks. Expect this to be split into **2 to 3 parts**.
+*   **Chapter 3 (Fuzzy Set Theory):** Handling vagueness (e.g., "the weather is hot"). Expect this to be **1 to 2 parts**.
+
+**Total Estimate:** You can probably expect **6 to 10 more PDF files** across the entire semester. 
+
+🧠 What should you do right now?
+
+**Do not wait for the next files to arrive.** The concepts in Part 1 are the alphabet of the entire course. If you don't understand how `p ⇒ q` works, you will struggle with Modal Logic (which adds new symbols to it). 
+
+Here is your action plan for this week:
+1.  **Master the Truth Tables:** Write down the truth table for `AND`, `OR`, `IF...THEN` (`⇒`), and `IF AND ONLY IF` (`⇔`). Memorize the `⇒` rule (it's only false when True implies False).
+2.  **Practice FNC Conversion:** Take a random formula like `¬(p ∧ q) ⇒ (r ∨ s)` and try to convert it to Conjunctive Normal Form using the algorithm in the PDF.
+3.  **Understand Quantifiers:** Make sure you can explain the difference between `∀x (Human(x) ⇒ Mortal(x))` and `∃x (Human(x) ∧ Mortal(x))`. 
+4.  **Try the Vacuum Cleaner PEAS:** Draw the vacuum cleaner environment and write out its PEAS (Performance, Environment, Actuators, Sensors).
+

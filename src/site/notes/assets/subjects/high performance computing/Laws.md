@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/assets/subjects/high-performance-computing/laws/","created":"2026-09-18T08:23:22.247+01:00","updated":"2026-10-12T10:04:42.247+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/assets/subjects/high-performance-computing/laws/","created":"2026-09-18T08:23:22.247+01:00","updated":"2026-10-14T19:54:06.481+01:00","dg-note-properties":{}}
 ---
 
 #hpc 
-*Moore/[[Dennard scaling\|Dennard scaling]] (Hardware trends⚙️) 
+*[[Moore\|Moore]]/[[Dennard scaling\|Dennard scaling]] (Hardware trends⚙️) 
 -explain why we were forced to build multi-core chips.
 
 
