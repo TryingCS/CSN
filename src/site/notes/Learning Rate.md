@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/learning-rate/","created":"2026-10-22T19:08:59.142+01:00","updated":"2026-10-22T19:09:04.710+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/learning-rate/","created":"2026-10-22T19:08:59.142+01:00","updated":"2026-10-23T19:54:54.538+01:00","dg-note-properties":{}}
 ---
 
 #ml 
@@ -7,7 +7,7 @@
 
 Imagine you are blindfolded at the top of a mountain, and your goal is to walk down to the bottom of the valley. You can only feel the ground with your feet to know which way is downhill.
 
-- **The learning rate (αα) is your step size.**
+- **The learning rate (α) is your step size.**
     
 - If you take **tiny baby steps** (learning rate too small), it will take you forever to reach the bottom (slow convergence).
     

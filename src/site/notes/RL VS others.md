@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/rl-vs-others/","created":"2026-10-05T19:58:50.619+01:00","updated":"2026-10-05T20:02:26.112+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/rl-vs-others/","created":"2026-10-05T19:58:50.619+01:00","updated":"2026-11-14T17:22:54.424+01:00","dg-note-properties":{}}
 ---
 
 #ml 
@@ -98,4 +98,3 @@ So SSL is like **playing with a static puzzle**, while RL is like **playing a ga
 
 None of them require human-provided labels, but they differ in **how they learn** and **what they learn from**.
 
-Does this clear up the distinction? If you want, we can go deeper into how SSL creates its pretext tasks or how RL’s policy gradient works.

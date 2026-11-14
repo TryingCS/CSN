@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/hpc-tw/","created":"2026-10-14T19:29:06.840+01:00","updated":"2026-10-15T17:40:06.205+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/hpc-tw/","created":"2026-10-14T19:29:06.840+01:00","updated":"2026-10-29T19:42:29.425+01:00","dg-note-properties":{}}
 ---
 
 #hpc
@@ -21,7 +21,15 @@
     
 - **The Shift:** Since we couldn't make one core faster, the industry shifted to using the still-shrinking transistors to build **multiple cores** on a single chip, ushering in the era of parallel computing.
 ***
-**Question 2:_"What do you know about Moore's Law and Dennard Scaling? How do they relate to the evolution of computing hardware? How do they apply in our era of multi-core and many-core processors?"_ ❓️
+2. What is lithography, and how does it relate to Moore’s Law and Dennard Scaling?❓️
+***
+Photolithography is the manufacturing process used to print microscopic transistor patterns onto silicon wafers using light.
+
+- **Relation to Moore's Law:** To keep doubling transistor density, lithography machines must use shorter wavelengths of light to print smaller and smaller features.
+    
+- **Relation to Dennard Scaling:** As lithography allowed smaller transistors, Dennard's rules allowed us to lower the voltage, keeping power density constant and allowing clock speeds to rise.
+***
+**Question 3:_"What do you know about Moore's Law and Dennard Scaling? How do they relate to the evolution of computing hardware? How do they apply in our era of multi-core and many-core processors?"_ ❓️
 ***
 1. What are Moore's Law and Dennard Scaling?💭
     
@@ -49,3 +57,5 @@
     *   *Logical Core (Hardware Thread):* Created by SMT/Hyper-Threading. One physical core presents itself as two logical cores to the OS to hide memory latency.
 *   **The Difference:** Software threads are *tasks*; hardware threads (cores) are *workers*. The OS maps software threads onto hardware threads.
 for more:[[threads vs threads\|threads vs threads]]
+***
+## EX2:

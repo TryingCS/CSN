@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/misc/","created":"2026-10-07T08:07:31.051+01:00","updated":"2026-10-08T19:41:13.522+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/misc/","created":"2026-10-07T08:07:31.051+01:00","updated":"2026-11-14T10:36:29.808+01:00","dg-note-properties":{}}
 ---
 
 #ml 
@@ -38,3 +38,6 @@ This is exactly why the [[Softmax\|Softmax]] function (from a few slides ago) ex
 ***
 
 Posterior. 's what we want to know after we see the data. (e.g., "The test is positive. What's the chance they are severely ill?")
+***
+"ensemble methods"=
+**Yes**, in Machine Learning, it literally just means a **"team" of models** working together. The French word _ensemble_ means "together," which perfectly captures the philosophy: multiple models joining forces.

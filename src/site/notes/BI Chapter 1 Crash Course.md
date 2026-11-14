@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/bi-chapter-1-crash-course/","created":"2026-10-12T18:50:38.645+01:00","updated":"2026-10-12T19:07:55.253+01:00","dg-note-properties":{}}
+{"dg-publish":true,"permalink":"/bi-chapter-1-crash-course/","created":"2026-10-12T18:50:38.645+01:00","updated":"2026-11-10T12:43:04.224+01:00","dg-note-properties":{}}
 ---
 
 #BI 
@@ -714,6 +714,52 @@ d. Reporting
 | **3. Application Areas** | HR, Sales, Marketing, Finance, etc. |
 | **4. Basic Concepts** | Data sources, data types (structured/semi/unstructured), KPIs, ETL, DW, Data Marts, programmable vs non-programmable decisions, data analysis, reporting, monitoring, visualization, predictive analytics |
 | **5. Historical Evolution** | 1950s: Luhn coins BI → 1960s: MIS → 1970s–80s: DSS → 1990s: DW + OLAP → 2000s: Self-Service BI → 2010s: Mobile/Cloud BI → 2020s: AI-Driven BI |
+
+---
+
+# NEW
+***
+### ➕ 2. New Content / Additions
+*   **Visual Definition of BI (Page 18):** A new visual diagram was added explicitly showing the flow: **Raw Data ➔ Information ➔ Decision**.
+*   **New Application Area: Logistics (Page 29):** Last year, Marketing was highlighted. This year, **Logistics** is added. 
+    *   *Key indicators:* Monitor stock levels, delivery efficiency, stock value, shortage rate, storage cost.
+*   **New ETL details (Page 43):** The ETL slide now has text explicitly defining the steps (Collect data, Clean/Normalize/Format, Insert into DW).
+
+---
+
+### ➖ 3. Removed Content **removed two concepts** from the "Basic Concepts of BI" section. If you studied them from the old file, you don't need to worry about them for this year:
+*   **Removed "Reporting"** (was slide 47 in the old file).
+*   **Removed "Data Visualization"** (was slide 49 in the old file).
+
+---
+
+### 🔄 4. Modifications (Same concept, different example)
+*   **Programmable vs. Non-Programmable Decisions (Page 50):**
+    *   *Last year's example for Non-programmable:* "Choose a marketing strategy to improve brand image."
+    *   *This year's example:* **"Opening a new store in another city to expand into a new market."**
+    *   *This year's example for Programmable:* Still the 5% discount rule.
+*   **KPI SMART Example (Page 42):** The "Relevant" example changed from "Improve customer satisfaction rate" to a more specific **"Reach an 85% CSAT (Customer Satisfaction Score) by the end of Q4."**
+*   **Marketing Application Area:** Removed from the specific "Application Areas" slides (it was page 26 last year), but HR, Sales, and Logistics remain.
+
+---
+
+### 📝 Summary of What You Should Do:
+
+1.  **Remove** "Reporting" and "Data Visualization" from your flashcards for Chapter 1.
+2.  **Add** "Logistics" as an application area, and  the new "Opening a new store" example for decisions.
+
+---
+
+### 🧠 Updated Quick Quiz (Based on the NEW Changes)
+
+
+**Q3.** Which of the following is an example of a Non-Programmable decision in the new slides?
+a. Applying a 5% discount for purchases over a certain limit.
+b. Choosing a marketing strategy to improve brand image.
+c. Automatic restocking when inventory is low.
+d. Opening a new store in another city to expand into a new market.
+
+**Answers:** Q1: c | Q2: b | Q3: d | Q4: c
 
 ---
 
